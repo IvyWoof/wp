@@ -17,9 +17,16 @@
       <div>Put company logo and name here</div>
     </header>
 
-    <nav>
-      <div>Put website navigation links here</div>
-    </nav>
+    <nav class="menu">
+  		<ul>
+		    <li><a href="#">Home</a></li>
+		    <li><a href="#">Introduction</a></li>
+		    <li><a href="#">Letters & Post Cards</a></li>
+		    <li><a href="#">Descriptions of Battle Action</a></li>
+		    <li><a href="#">Places</a></li>
+		    <li><a href="#">Related Material</a></li>
+  		</ul>
+  	</nav>
 
     <main>
       <article id='Website Under Construction'>
