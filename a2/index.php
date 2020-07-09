@@ -14,32 +14,41 @@
   <body>
 
     <header>
-      <div>Put company logo and name here</div>
+      	<h1>ANZAC Douglas Raymond Baker</h1>
+      	<img src="../../media/D.R.Baker.jpg" alt="D.R. Baker F.Co">
     </header>
 
-    <nav class="menu">
-  		<ul>
+    <nav>
+  		<ul id="navigation">
 		    <li><a href="#">Home</a></li>
-		    <li><a href="#">Introduction</a></li>
-		    <li><a href="#">Letters & Post Cards</a></li>
-		    <li><a href="#">Descriptions of Battle Action</a></li>
-		    <li><a href="#">Places</a></li>
-		    <li><a href="#">Related Material</a></li>
+		   	<li><a href="#">Introduction</a></li>
+		   	<li><a href="#">Letters & Post Cards</a></li>
+		   		<ul>
+		   			<li><a href="#">1914</a></li>
+	    			<li><a href="#">1915</a></li>
+	    			<li><a href="#">1916</a></li>
+		    		<li><a href="#">1917</a></li>
+		    		<li><a href="#">1918</a></li>
+		    	</ul>
+		   	<li><a href="#">Descriptions of Battle Action</a></li>
+		   	<li><a href="#">Places</a></li>
+		   	<li><a href="#">Related Material</a></li>
   		</ul>
   	</nav>
 
     <main>
       <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
       </article>
     </main>
 
     <footer>
+      <div id="site-info">
+      	<p>Sitemap</p>
+      	<p>Contant: ibak6837@bigpond.net.au</p>
+      </div>
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+      </script> Alanna Hembrow s3683007 <a href="https://github.com/s3683007/wp">GitHub</a> Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
 
