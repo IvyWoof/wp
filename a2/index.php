@@ -6,16 +6,14 @@
     <title>Assignment 2</title>
     
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
-    <script src='../wireframe.js'></script>
+    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
     <header>
-      	<h1>ANZAC Douglas Raymond Baker</h1>
-      	<img src="../../media/D.R.Baker.jpg" alt="D.R. Baker F.Co">
+      		<h1 class="">ANZAC Douglas Raymond Baker</h1>
+      		<img src="../../media/D.R.Baker.jpg" alt="D.R. Baker F.Co">
     </header>
 
     <nav>

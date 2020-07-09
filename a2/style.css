@@ -1,1 +1,61 @@
-/* Insert your styles here */
+html {
+	font-family: Arial;
+}
+
+
+body {
+	margin: 0;
+}
+
+header {
+	z-index: -1;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ECE2D0;
+}
+
+header h1 {
+	order: 2;
+}
+
+header img {
+	order: 1;
+
+}
+
+nav {
+  width: 200px;
+  background-color: #BFB5AF;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#navigation {
+	list-style-type: none;
+	margin: 0;
+}
+
+nav a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+	color: white;
+	background-color: #948B89;
+}
+
+main {
+	margin-left: 200px;
+	padding: 0 20px 50px 20px;
+}
+
+footer {
+	margin-left: 220px;
+	display: flex;
+	justify-content: center;
+}
