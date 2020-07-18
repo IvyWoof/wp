@@ -1,5 +1,5 @@
 html {
-	font-family: Arial;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 
@@ -13,32 +13,45 @@ header {
 	color: white;
 	display: flex;
   	justify-content: space-between;
-  	border-bottom:1px solid #ddd;
+  	border-bottom: 1px solid #ddd;
 }	
+
+header h1 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
 
 /* Flex navigation bar */
 .flexNav {
-  display: flex;  
-  flex-direction: row;
+  	display: flex;  
+  	flex-direction: row;
+  	margin: 0;
+	z-index: 100;
+	position: relative;
 }
   
- .flexNav li{
-    display:block;
-    list-style-type:none;
-    text-transform:uppercase;
+.flexNav li {
+    list-style-type: none;
+    text-transform: uppercase;
+  	display: block;
+
   }
   
- .flexNav li a{
-    display:flex;
-    text-align:center;
-    text-decoration:none;
-    color:#777;
-    padding:1rem;
+.flexNav li a {
+    display: flex;
+    text-decoration: none;
+    color: #c7b97b;
+    padding: 10px;
+ 	height: 100%;
+ 	width: 140px;
+ 	justify-content: center;
+ 	align-items: center;
   }
   
- .flexNav li a:hover{
-    background:#777;
-    color:#fff;
+.flexNav li a:hover {
+    background: #DDC213;
+    color: black;
   }
 
 /* Navigation dropdown */
@@ -46,19 +59,16 @@ header {
 .subMenu {
 	display: none;
 	position: absolute;
-	  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+	background-color: #f9f9f9;
+ 	width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
 }
 
-.flexNav:hover .subMenu {
+.flexNav li:hover .subMenu {
 	display: block;
+	padding: 0;
 }
-
-
-
 
 
 
@@ -74,15 +84,104 @@ main {
 	margin: 20px;
 }
 
-main img {
-	width: 30%;
-	height: 400px;
-	display: flow;
-}
-
 .selectContainer {
 	display: flex;
+
 }
+
+.container img{
+	display: flow;
+	width: 650px;
+	height: 800px;
+}
+
+
+
+.imageContainer {
+    overflow: hidden;
+}
+
+
+
+.imageContainer    img {
+        transition: all .4s;
+}
+
+.overlay {
+     position: absolute;
+       @include overlay_position();
+        background-color: $overlay;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all .4s;
+        color: #fff;
+        font-family: sans-serif;
+        z-index: 1;
+        background-color: black;
+       	width: 622px;
+		height: 800px;
+    }
+    
+    .imageContainer:hover .overlay {
+        opacity: 70%;
+    }
+    
+    .imageContainer:hover img {
+        transform: scale(1.4);
+    }
+
+
+
+#head {
+	display: flex;
+}
+
+
+
+.main-content {
+	margin: 20px;
+	display: flex;
+}
+
+.main-description {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
 	margin-top: 30px;
@@ -90,3 +189,18 @@ footer {
 	display: flex;
 }
 
+
+
+
+
+/* Small screens */
+@media all and (max-width: 500px) {
+	.flexNav {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+
+  .selectContainer {
+  	flex-direction: column;
+  }
+}
