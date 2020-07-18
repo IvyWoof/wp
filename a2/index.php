@@ -15,11 +15,11 @@
         <h1>ANZAC Douglas Raymond Baker</h1>
         <!--<img src="../../media/D.R.Baker.jpg" alt="D.R. Baker F.Co">-->
       <nav>
-    		<ul class="navigation">
+    		<ul class="flexNav">
   		    <li><a href="#">Home</a></li>
   		   	<li><a href="#">Introduction</a></li>
   		   	<li><a href="#">Letters & Post Cards</a></li>
-  		   		<ul>
+  		   		<ul class="subMenu">
   		   			<li><a href="#">1914</a></li>
   	    			<li><a href="#">1915</a></li>
   	    			<li><a href="#">1916</a></li>
