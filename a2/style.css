@@ -5,57 +5,48 @@ html {
 
 body {
 	margin: 0;
+	background-color: black;
 }
+
 
 header {
-	z-index: -1;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #ECE2D0;
-}
-
-header h1 {
-	order: 2;
-}
-
-header img {
-	order: 1;
-
-}
-
-nav {
-  width: 200px;
-  background-color: #BFB5AF;
-  position: fixed;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-#navigation {
-	list-style-type: none;
-	margin: 0;
-}
-
-nav a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
-
-nav a:hover {
 	color: white;
-	background-color: #948B89;
+	display: flex;
+  	justify-content: space-between;
+}	
+
+
+nav a{
+	color: white;
+    text-decoration: none;
 }
 
+nav li {
+	list-style-type: none;
+}
+
+
+
+
+/* Do not work on this yet */
 main {
-	margin-left: 200px;
-	padding: 0 20px 50px 20px;
+	color: white;
+	margin: 20px;
+}
+
+main img {
+	width: 30%;
+	height: 400px;
+	display: flow;
+}
+
+.selectContainer {
+	display: flex;
 }
 
 footer {
-	margin-left: 220px;
+	margin-top: 30px;
+	color: white;
 	display: flex;
-	justify-content: center;
 }
+
