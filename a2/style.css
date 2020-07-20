@@ -20,6 +20,8 @@ header h1 {
 	margin-bottom: 0;
 	text-transform: uppercase;
 	margin-left: 10px;
+	font-weight: normal;
+	font-family: Helvetica;
 }
 
 /* Flex navigation bar */
@@ -81,7 +83,9 @@ header h1 {
 /* Do not work on this yet */
 main {
 	color: white;
-	margin: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 40px;
 }
 
 .selectContainer {
@@ -141,13 +145,44 @@ main {
 
 
 
-.main-content {
-	margin: 20px;
+
+
+
+/*Main content of website */
+.main-container {
 	display: flex;
+	  flex-flow: row wrap;
+	margin-top: 40px;
+
 }
 
-.main-description {
-	display: block;
+.main-content {
+	display: flex;
+	background-color: white;
+	color: black;
+	margin-top: 100px;
+	margin-bottom: 150px;
+}
+
+
+
+.main-content h2 {
+	    display: flex;
+		font-size: 50px;
+		font-weight: normal;
+        color: #c7b97b;
+        justify-content: center;
+}
+
+
+.main-content img {
+	width: 200px;
+	height: 300px;
+	padding-right: 20px;
+	padding-top: 40px;
+	padding-left: 10px;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
 
 
@@ -155,6 +190,16 @@ main {
 
 
 
+
+
+.parallax {
+	background-image: url("../../media/background.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
 
 
 

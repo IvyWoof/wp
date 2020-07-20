@@ -10,7 +10,6 @@
   </head>
 
   <body>
-
     <header>
       <div id="head">
         <img src="../../media/poppy.png" alt="Red Poppy">
@@ -19,7 +18,7 @@
       <nav>
     		<ul class="flexNav">
   		    <li><a href="#">Home</a></li>
-  		   	<li><a href="#">Introduction</a></li>
+  		   	<li><a href="#introduction">Introduction</a></li>
   		   	<li><a href="#">Letters</a>
   		   		<ul class="subMenu">
   		   			<li><a href="#">1914</a></li>
@@ -61,9 +60,11 @@
           <img src="../../media/maps.png" alt="WW2 map of allies and enemies over Europe">
         </div>
       </section>
-      <section class="main-content">
-        <img src="../../media/D.R.Baker.jpg" alt="Douglas Raymond Baker">
-        <div class="main-description">
+
+      <section class="main-container parallax" id="introduction">
+        <article class="main-content">
+          <img src="../../media/D.R.Baker.jpg" alt="Douglas Raymond Baker">
+          <div>
           <h2>ANZAC</h2>
           <p>April 2015 marked the centenary of the ANZAC legend. As such, this site was created to help young, and old, to learn, discover and connect with people from that period of time. Inparticular, those who created the ANZAC legend. </p>
           <h3>What does ANZAC day represent?</h3>
@@ -72,7 +73,87 @@
           <p>The letters listed throughout this website were sent from Douglas Raymond Baker, who came from Gympie, Queensland, Australia. He enlisted in August 1914 and during the years that followed, he wrote letters and post cards to his family at home. In them, he describes much of the goings-on of the life of an ANZAC, his feeling and opinions and experiences that he had while visiting relatives in England during leave.</p>
           <p>The letters start from the beginning of Douglas' basic training which occurred in August 1914 and ended in May 1918. Training took place in Brisbane, Australia.</p>
           <p>These letters are made avaliable so that others can learn and understand the life of an ANZAC and get a sense of what life on the battlefield was like.</p>
-        </div>      
+          </div>
+        </article>
+            <article class="main-content">
+          <p>By Douglas Richard Baker
+(son of Douglas Raymond Baker)
+
+
+These are copies of letters written by my father Douglas Raymond Baker during the First World War (1914-1918) to his family in Gympie. I have three thick exercise books in which the letters were copied in hand writing by my Aunt Alice, his sister. I understand that this was done so his letters could be sent on to other members of the family. I don’t know if the originals are still in existence, probably not.
+
+In the early letters Alice has not included the name of the person they were written to but later she writes at the beginning, “Letter to Dot”,  “Letter to Mother”, etc. and later still copies the original, “Dear Al”, “Dear Mag”, etc..  Likewise the endings are often not laid out fully as we would do but Al may have done this or Dad may have been saving space on the page.
+
+Some letters are slightly out of date order in the books but as most of these are around the time his father died I have put them in the correct order as this is crucial to understanding the sense of the contents.  A lot will be missing – many, many ships were sunk but thanks to Aunt Alice we have these copies of the ones that did get through.
+
+Where Dad used brackets in a letter I have used [   ]  style and where I have made any comment or explanation I have used (   ) and Italics.
+
+Where he uses the word “gay” it is used in the true sense, bright, happy, carefree, etc., This is the original meaning of the word before it became associated with the homosexual community.
+
+The amounts of money are, of course, in Pounds, shillings and pence but as these are out of date and we have no pounds sign in the computer I have written them in, sometimes showing the decimal equivalents. One Pound equalled $2,  one shilling equalled 10 cents and one penny equalled a little under one cent. After a while I stopped putting the equivalents in as they had cno significance unless you knew the relative cost of things then and now. A shilling – equivalent to ten cents might actually alent to ten cents might actually buy  buy ten or twenty dollars worth of goods now.
+
+Some abbreviations and terms:-
+
+   Coy      =  Company(part of a Battalion)
+
+                                    Batt.    =   Battalion.
+
+                                    Col.     =   Colonel.
+
+                                       Sergt.  =   Sergeant.         
+
+                                       Capt.   =    Captain
+
+                                       Lieut.   =    Lieutenant (pronounced “Lef-tenant”)
+
+                                       Q.M.    =     Quarter Master.
+
+                                       Comp. =    also  Company.
+
+                                       PC       =    Post Card.(not Personal Computer!)
+
+                                       CB       =    Confined to Barracks (leave stopped as a punishment)
+
+                                       big hits =    top ranked officers.
+
+                                       brass hats  =  top ranked officers.
+
+                                       dry canteen  =  bar and/or cafeteria, etc. where  no alcohol is served.
+
+                                       wet canteen  = bar and/or cafeteria, etc. where alcohol  is available.
+                                                   sapping  =  digging a tunnel or deep trench to approach or undermine an enemy position.
+
+                                       L. Horse  =  Light Horse. 
+
+       good nick or great nick  =  good health
+
+   bonsorful  =  wonderful, marvellous.     (in 2009speak,  “awesome”, “cool”.)
+
+   M. G. S.   =  Machine  Gun  Section.
+
+   Territorials  =  soldiers of the English  Volunteer Reserve.
+
+   Terriers   =   Territorials
+
+   Bomb  =  unless dropped from an aeroplane these would have been Mills Bombs    –     an early version of the hand grenade.
+
+   Blighty =   England.
+
+   Duke    =   Dad’s/family’s dog.
+
+   O.R.     =   Orderly Room.
+
+Additional Comments by Ian Stuart Baker
+(son of Douglas Richard Baker)
+
+
+As the grandson of the Douglas Raymond, I'd like to share some thoughts with modern readers. Apart from the language issues that my Dad highlights, it would also help to recognise that in Grandfathers day, the letter was the only means of international communications for average people (telegrams were expensive and used rarely and international telephone calls, rarer still). That's why these letters are so important and why their content gives us window into their lives.
+
+From discussions with my Dad, it has came to light that the content of letters to his direct family deliberately leave out much of the dreadful suffering and drudgery experienced by the diggers. This intentional self-editing was intended to allay the fears and concerns of those at home, inparticular, his mother and sisters.
+
+Finally, let me express a debt of thanks to Great Aunt Alice for diligently transcribing the original letters for without this effort, we would not have the material we do today. Also, my gratitude to my father for his work transforming the hand-written script into a typed paper record and then into electronic format, making my part in this infinitely easier.
+</p>
+        </article>   
       </section>
 
     </main>
