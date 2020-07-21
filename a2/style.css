@@ -1,5 +1,5 @@
 html {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: sans-serif;
 }
 
 
@@ -12,8 +12,12 @@ body {
 header {
 	color: white;
 	display: flex;
-  	justify-content: space-between;
-  	border-bottom: 1px solid #ddd;
+	justify-content: flex-start;
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+	margin-right: 16px;
+	margin-left: 16px;
 }	
 
 header h1 {
@@ -21,14 +25,32 @@ header h1 {
 	text-transform: uppercase;
 	margin-left: 10px;
 	font-weight: normal;
-	font-family: Helvetica;
+}
+
+/* Style the search box inside the navigation bar */
+header input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+#search-bar {
+	position: absolute;
+    width: 100px;
+    height: 34px;
+    text-align: center;
+    right: 10px;
 }
 
 /* Flex navigation bar */
 .flexNav {
   	display: flex;  
   	flex-direction: row;
-  	margin: 0;
+  	justify-content: flex-end;
+  	margin-right: 10px;
+  	margin-top: 0;
 	z-index: 100;
 	position: relative;
 }
@@ -57,7 +79,6 @@ header h1 {
   }
 
 /* Navigation dropdown */
-
 .subMenu {
 	display: none;
 	position: absolute;
@@ -85,63 +106,49 @@ main {
 	color: white;
 	margin-left: 20px;
 	margin-right: 20px;
-	margin-top: 40px;
+	margin-top: 20px;
+		border-top: 2px solid red;
+		padding-top: 30px;
 }
 
-.selectContainer {
+.select-container {
 	display: flex;
-
+	position: relative;
 }
 
-.container img{
-	display: flow;
+.image-container img{
 	width: 650px;
 	height: 800px;
 }
 
-
-
-.imageContainer {
+.image-container {
     overflow: hidden;
 }
 
 
-
-.imageContainer    img {
-        transition: all .4s;
+.image-container img {
+    transition: all .4s;
 }
 
 .overlay {
-     position: absolute;
-       @include overlay_position();
-        background-color: $overlay;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: all .4s;
-        color: #fff;
-        font-family: sans-serif;
-        z-index: 1;
-        background-color: black;
-       	width: 622px;
-		height: 800px;
-    }
-    
-    .imageContainer:hover .overlay {
-        opacity: 70%;
-    }
-    
-    .imageContainer:hover img {
-        transform: scale(1.4);
-    }
-
-
-
-#head {
-	display: flex;
+    position: absolute;
+    opacity: 0;
+    transition: all .4s;
+    color: #fff;
+    z-index: 1;
+    background-color: black;
+    width: 622px;
+	height: 805px;
 }
+    
+.image-container:hover .overlay {
+    opacity: 70%;
+}
+    
+.image-container:hover img {
+    transform: scale(1.4);
+}
+
 
 
 
@@ -151,46 +158,47 @@ main {
 /*Main content of website */
 .main-container {
 	display: flex;
-	  flex-flow: row wrap;
+	flex-flow: row wrap;
 	margin-top: 40px;
-
 }
 
 .main-content {
 	display: flex;
-	background-color: white;
-	color: black;
+	background-color: grey;
+	color: white;
 	margin-top: 100px;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+	opacity: 90%;
+	align-content:;
+	padding-right: 100px;
+	padding-left: 100px;
 }
-
-
 
 .main-content h2 {
-	    display: flex;
-		font-size: 50px;
-		font-weight: normal;
-        color: #c7b97b;
-        justify-content: center;
+	display: flex;
+	font-size: 40px;
+	line-height: 1px;
+  	height: 1px;
+	font-weight: normal;
+    color: #c7b97b;
+    justify-content: center;
 }
-
 
 .main-content img {
 	width: 200px;
 	height: 300px;
-	padding-right: 20px;
-	padding-top: 40px;
-	padding-left: 10px;
+	padding-right: 2px;
+	padding-top: 4px;
+	padding-left: 2px;
 	flex-grow: 0;
 	flex-shrink: 0;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-
-
-
-
-
-
+.main-text {
+	text-align: center;
+}
 
 .parallax {
 	background-image: url("../../media/background.jpg");
@@ -200,6 +208,8 @@ main {
 	background-size: cover;
 	height: 100%;
 }
+
+
 
 
 
@@ -245,7 +255,8 @@ footer {
     flex-direction: column;
   }
 
-  .selectContainer {
+  .select-container {
   	flex-direction: column;
   }
+
 }
