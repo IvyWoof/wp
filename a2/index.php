@@ -19,9 +19,9 @@
     </header>
       <nav>
     		<ul class="flexNav">
-  		    <li><a href="#">Home</a></li>
+  		    <li><a href="index.php">Home</a></li>
   		   	<li><a href="#introduction">Introduction</a></li>
-  		   	<li><a href="#">Letters</a>
+  		   	<li><a href="/wp/a2/pages/letters.html">Letters</a>
   		   		<ul class="subMenu">
   		   			<li><a href="#">1914</a></li>
   	    			<li><a href="#">1915</a></li>

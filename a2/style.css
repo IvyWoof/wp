@@ -1,13 +1,37 @@
-html {
-	font-family: sans-serif;
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('/wp/a2/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/wp/a2/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/wp/a2/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('/wp/a2/fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+	font-family: playfair_displayregular;
+}
+
+h2 {
+	font-family: playfair_displayregular;
+}
+
+
+html {
+	font-family: open_sansregular;
+}
 
 body {
 	margin: 0;
 	background-color: black;
 }
-
 
 header {
 	color: white;
@@ -18,6 +42,7 @@ header {
 	height: 100%;
 	margin-right: 16px;
 	margin-left: 16px;
+	line-height: 1px;
 }	
 
 header h1 {
@@ -107,7 +132,7 @@ main {
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
-		border-top: 2px solid red;
+		border-top: 2px solid grey;
 		padding-top: 30px;
 }
 
@@ -256,6 +281,10 @@ footer {
   }
 
   .select-container {
+  	flex-direction: column;
+  }
+
+  main {
   	flex-direction: column;
   }
 
