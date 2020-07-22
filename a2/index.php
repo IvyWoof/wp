@@ -93,6 +93,13 @@
           <h3><a href="https://github.com/s3683007/wp">GitHub</a></h3>
         </div>
       </div>
+      <div>&copy;<script>
+        document.write(new Date().getFullYear());
+      </script> 
+      <h4>Alanna Hembrow s3683007 Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</h3></div>
+      <div>
+        <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+      </div>
     </footer>
   </body>
 </html>
