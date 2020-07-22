@@ -238,26 +238,59 @@ footer h3 {
 
 /* Small screens */
 @media all and (max-width: 500px) {
+
 	.flexNav {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
+		flex-flow: column wrap;
+	}
+
+	nav {
+		height: 252px;
+		padding-left: 100px;
 	}
 
 	.select-container {
-  	flex-direction: column;
-  	width: 100%;
+	  	flex-direction: column;
+	  	width: 100%;
 	}
 
 	.overlay {
-	width: 100%;
+		width: 100%;
 	}
 
 	main {
-  	flex-direction: column;
-  }
+  		flex-direction: column;
+ 	}
 
-  	.main-text h2{
+  	.main-text h2 {
   		padding-top: 420px;
   	}
 
+}
+
+/* Medium screens */
+@media all and (max-width: 900px) {
+	.flexNav {
+		flex-flow: row wrap;
+	}
+
+	nav {
+		height: 272px;
+	}
+
+	.select-container {
+	  	flex-direction: column;
+	  	width: 100%;
+	}
+
+		.image-container img {
+	  	width: 100%;
+	}
+
+	main {
+  		flex-direction: column;
+ 	}
+
+  	.main-text h2 {
+  		padding-top: 420px;
+  	}
 }
