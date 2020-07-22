@@ -29,7 +29,7 @@
   	    	</ul>
         </li>
 		   	<li><a href="#">Battles</a></li>
-  		  <li><a href="#">Places</a></li>
+  		  <li><a href="/wp/a2/pages/places.html">Places</a></li>
         <li><a href="#">Related</a></li>
     	</ul>
     </nav>

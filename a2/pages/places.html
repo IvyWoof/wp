@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Assignment 2</title>
+	    
+	    <!-- Keep wireframe.css for debugging, add your css to style.css -->
+	    <link id='stylecss' type="text/css" rel="stylesheet" href="/wp/a2/css/places-stylesheet.css">
+	</head>
+
+	<body>
+	  <header>
+	    <img src="/../../../media/poppy.png" alt="Red Poppy">
+	    <h1><a href="index.php">Life as an ANZAC</a></h1>
+	    <!-- Insert search bar in future -->
+	  </header>
+		  <nav>
+	    	<ul class="flexNav">
+	  		  <li><a href="../index.php">Home</a></li>
+	  		 	<li><a href="#introduction">Introduction</a></li>
+	  	   	<li><a href="/wp/a2/pages/letters.html">Letters</a>
+	  	   		<ul class="subMenu">
+			   			<li><a href="#">1914</a></li>
+	  	    		<li><a href="#">1915</a></li>
+	  	    		<li><a href="#">1916</a></li>
+	  		  		<li><a href="#">1917</a></li>
+	  		  		<li><a href="#">1918</a></li>
+	  	    	</ul>
+	        </li>
+			   	<li><a href="#">Battles</a></li>
+	  		  <li><a href="/wp/a2/pages/places.html">Places</a></li>
+	        <li><a href="#">Related</a></li>
+	    	</ul>
+	    </nav>
+	  <main>
+		  <section id="main-container">
+		  	<article class="main-content overlay">
+		  		<h1>Places of Interest</h1>
+		  		<div class="main-info">
+			  		<span>Places mentioned by Douglas Raymond Baker have been featured on the map. Some places have changed significantly and are now cemetary sites or residential areas. There are a few places where the spelling was not accurate but process of deducation allowed accurate guesses to be made. Any places which originally contained spelling errors have been listed in their description.</span></br></br>
+			  		<span>You can use the map by clicking on the icons, each colour represents a different continent and if a place has been mentioned in letters, the date has been listed so you can find the letter easily.</span>
+		  		</div>
+		  	</article>
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JwmSCxDPtiwZo6ANP4QNIN6wCmktvnSg">
+				</iframe>
+			</section>
+		</main>
+    <footer>
+      <div class="links">
+      	<div class="links-item">
+          <h3><a href="sitemap">Sitemap</a></h3>
+        </div>
+      	<div class="links-item">
+          <h3><a href="contact-us">Contact us</a></h3>
+        </div>
+        <div class="links-item">
+          <h3><a href="https://github.com/s3683007/wp">GitHub</a></h3>
+        </div>
+      </div>
+      <div>&copy;<script>
+        document.write(new Date().getFullYear());
+      </script> 
+      <h4>Alanna Hembrow s3683007 Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</h3></div>
+      <div>
+        <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+      </div>
+    </footer>
+	</body>
+</html>
