@@ -153,6 +153,7 @@ nav {
 iframe {
 	width: 1200px;
 	height: 750px;
+	margin: 0px 50px 0px 30px;
 }
 
 /* Footer and script design */
@@ -181,4 +182,66 @@ footer h3 {
 .links-item {
 	width: 155px;
     margin: 10px;
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+
+	.flexNav {
+		flex-flow: column wrap;
+	}
+
+	nav {
+		height: 252px;
+		padding-left: 100px;
+	}
+
+	#main-container {
+  		flex-direction: column;
+  		flex-flow: wrap;
+ 	}
+
+ 	iframe {
+ 		margin: 20px 0px 0px 0px;
+ 	}
+
+ 	.main-info {
+ 		margin-top: 140px;
+ 	}
+
+ 	.main-content {
+ 		margin-left: 0px;
+ 	}
+}
+
+
+
+
+
+
+
+
+
+/* Medium screens */
+@media all and (max-width: 900px) {
+	.flexNav {
+		flex-flow: row wrap;
+	}
+
+	nav {
+		height: 272px;
+	}
+
+	#main-container {
+  		flex-direction: column;
+  		flex-flow: wrap;
+ 	}
+
+ 	.main-content {
+ 		margin-left: 0px;
+ 	}
+
+ 	iframe {
+ 		margin: 20px 0px 0px 0px;
+ 	}
 }
