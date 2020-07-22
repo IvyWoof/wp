@@ -207,42 +207,45 @@ header a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
-	margin-top: 60px;
-    display: flex;
-    height: 100%;    
-    margin-top: 50px;
-    text-align: center;
+	text-align: center;
+	margin-top: 50px;
 }
 
-footer a {
+footer a{
 	text-decoration: none;
 	color: white;
 }
+
+footer h3 {
+	font-weight: normal;
+}
+
+
+.links {
+	display: flex;
+	justify-content: center;
+	border-top: 2px solid grey;
+}
+
+.links-item {
+	width: 155px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

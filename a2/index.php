@@ -78,30 +78,21 @@
             <p>The letters start from the beginning of Douglas' basic training which occurred in August 1914 and ended in May 1918. Training took place in Brisbane, Australia.</p>
             <p>These letters are made avaliable so that others can learn and understand the life of an ANZAC and get a sense of what life on the battlefield was like.</p>
           </div>
+        </article>
       </section>
     </main>
-
-
-
-
-
-
-
-
-
-
-
     <footer>
-      <div id="site-info">
-      	<a href="">Sitemap</p>
-      	<a href="">Contact us</p>
-        <a href="https://github.com/s3683007/wp">GitHub</a>
-      <div>&copy;<script>
-        document.write(new Date().getFullYear());
-      </script> Alanna Hembrow s3683007 Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-            </div>
+      <div class="links">
+      	<div class="links-item">
+          <h3><a href="sitemap">Sitemap</a></h3>
+        </div>
+      	<div class="links-item">
+          <h3><a href="contact-us">Contact us</a></h3>
+        </div>
+        <div class="links-item">
+          <h3><a href="https://github.com/s3683007/wp">GitHub</a></h3>
+        </div>
+      </div>
     </footer>
-
   </body>
 </html>
