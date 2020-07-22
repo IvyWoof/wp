@@ -27,9 +27,15 @@ body {
 }
 
 main {
+	height: 800px;
+	display: flex;
+	justify-content: space-between;
 	color: white;
 	border-top: 2px solid grey;
 	padding: 30px 20px 0px 20px;
+	background-size: 170% 180%;
+	background-repeat: no-repeat;
+	background-image: url("/../../../media/poppy-background.jpg");
 }
 
 /*Fonts for different header types */
@@ -120,121 +126,121 @@ nav {
 	padding: 0;
 }
 
-/* Main content container */
-#main-container {
-	display: flex;
-	justify-content: space-between;
+/* form styling */
+.contact-form {
+	order: 2;
+	padding-left: 50px;
+	width: 40%;
+	margin-right: 40px;
 }
 
-/* Style main content container */
-.main-content {
-	width: 500px;
-	text-align: center;
-	margin-left: 50px;
-	padding: 30px;
-	background-image: url("/../../../media/WW1-bgrnd.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+input {
+  width: 100%;
+  padding: 5px;
+  margin: 4px 0 10px 0;
 }
 
-.main-content h1 {
-	font-size: 80px;
-	line-height: 60px;
-	height: 60px;
-	color: black;
+textarea {
+	width: 100%;
 }
 
-.main-info {
-	background: grey;
-	margin: 0px -30px 0px -30px;
-	padding: 20px 0px 20px 0px;
+input[type=submit] {
+	width: 20%;
 }
 
-/* Iframe style */
-iframe {
-	width: 1200px;
-	height: 750px;
-	margin: 0px 50px 0px 30px;
+.contact-info {
+	order: 1;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 15%;
+    height: 60%;
 }
 
 /* Footer and script design */
 footer {
-	text-align: center;
-	margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 footer a{
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
 footer h3 {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 .links {
-	display: flex;
-	justify-content: center;
-	border-top: 2px solid grey;
-	border-bottom: 2px solid grey;
-	margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin-bottom: 20px;
 }
 
 .links-item {
-	width: 155px;
-    margin: 10px;
+  width: 155px;
+  margin: 10px;
 }
 
 /* Small screens */
 @media all and (max-width: 500px) {
 
-	.flexNav {
-		flex-flow: column wrap;
-	}
+  .flexNav {
+    flex-flow: column wrap;
+  }
 
-	nav {
-		height: 252px;
-		padding-left: 100px;
-	}
+  nav {
+    height: 252px;
+    padding-left: 100px;
+  }
 
-	#main-container {
-  		flex-direction: column;
-  		flex-flow: wrap;
- 	}
+  main {
+    flex-flow: column wrap;
+    flex-direction: column;
+  }
 
- 	iframe {
- 		margin: 20px 0px 0px 0px;
- 	}
+  .contact-form {
+  	width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
- 	.main-info {
- 		margin-top: 140px;
- 	}
+  .contact-info {
+  	width: 100%;
+  	padding: 0;
+    margin: 0;
+  }
 
- 	.main-content {
- 		margin-left: 0px;
- 	}
 }
 
 /* Medium screens */
 @media all and (max-width: 900px) {
-	.flexNav {
-		flex-flow: row wrap;
-	}
+  .flexNav {
+    flex-flow: row wrap;
+  }
 
-	nav {
-		height: 272px;
-	}
+  nav {
+    height: 272px;
+  }
 
-	#main-container {
-  		flex-direction: column;
-  		flex-flow: wrap;
- 	}
+  main {
+    flex-flow: column wrap;
+    flex-direction: column;
+  }
 
- 	.main-content {
- 		margin-left: 0px;
- 	}
+  .contact-form {
+  	width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
- 	iframe {
- 		margin: 20px 0px 0px 0px;
- 	}
+  .contact-info {
+  	width: 100%;
+  	height: 280px;
+  }
 }

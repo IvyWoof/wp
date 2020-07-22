@@ -107,6 +107,7 @@ nav {
 /* Navigation dropdown */
 .subMenu {
   display: none;
+  text-align: center;
   position: absolute;
   background-color: white;
   width: 160px;
