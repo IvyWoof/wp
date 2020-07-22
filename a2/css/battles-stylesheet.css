@@ -16,6 +16,16 @@
     font-style: normal;
 }
 
+/*Font for letter content */
+@font-face {
+    font-family: 'bad_scriptregular';
+    src: url('/wp/a2/fonts/badscript-regular-webfont.woff2') format('woff2'),
+         url('/wp/a2/fonts/badscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
   font-family: open_sansregular;
   color: white;
@@ -29,7 +39,6 @@ body {
 main {
   color: white;
   border-top: 2px solid grey;
-  padding: 30px 20px 0px 20px;
 }
 
 /*Fonts for different header types */
@@ -110,11 +119,55 @@ nav {
   position: absolute;
   background-color: white;
   width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .flexNav li:hover .subMenu {
   display: block;
   padding: 0;
+}
+
+/* Main content image style */
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-container h1 {
+  font-size: 70px;
+  line-height: 1px
+}
+
+.main-content h2 {
+  color: #b8a04b;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+
+/* battle letters style and readability */
+.battle-letters {
+  margin-top: 30px;
+  color: black;
+  background: white;
+  padding: 0px 20px 0px 20px;
+}
+
+.battle-letters img {
+  height: 500px;
+  width: 700px;
+  float: left;
+  padding-right: 30px;
+}
+
+.battle-letters p {
+  font-family: bad_scriptregular;
+  font-weight: normal;
+  font-size: 20px;
 }
