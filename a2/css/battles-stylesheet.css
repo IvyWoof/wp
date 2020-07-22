@@ -78,8 +78,8 @@ nav {
     justify-content: flex-end;
     margin-right: 10px;
     margin-top: 0;
-    z-index: 100;
-    position: relative;
+  z-index: 100;
+  position: relative;
 }
   
 .flexNav li {
@@ -110,122 +110,11 @@ nav {
   position: absolute;
   background-color: white;
   width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .flexNav li:hover .subMenu {
   display: block;
   padding: 0;
-}
-
-main {
-	color: white;
-	font-family: homemade_appleregular;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer and script design */
-footer {
-  text-align: center;
-  margin-top: 50px;
-}
-
-footer a{
-  text-decoration: none;
-  color: white;
-}
-
-footer h3 {
-  font-weight: normal;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-  margin-bottom: 20px;
-}
-
-.links-item {
-  width: 155px;
-    margin: 10px;
-}
-
-/* Small screens */
-@media all and (max-width: 500px) {
-
-  .flexNav {
-    flex-flow: column wrap;
-  }
-
-  nav {
-    height: 252px;
-    padding-left: 100px;
-  }
-
-  #main-container {
-      flex-direction: column;
-      flex-flow: wrap;
-  }
-
-  iframe {
-    margin: 20px 0px 0px 0px;
-  }
-
-  .main-info {
-    margin-top: 140px;
-  }
-
-  .main-content {
-    margin-left: 0px;
-  }
-}
-
-
-
-
-
-
-
-
-
-/* Medium screens */
-@media all and (max-width: 900px) {
-  .flexNav {
-    flex-flow: row wrap;
-  }
-
-  nav {
-    height: 272px;
-  }
-
-  #main-container {
-      flex-direction: column;
-      flex-flow: wrap;
-  }
-
-  .main-content {
-    margin-left: 0px;
-  }
-
-  iframe {
-    margin: 20px 0px 0px 0px;
-  }
 }

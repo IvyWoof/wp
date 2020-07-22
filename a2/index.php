@@ -8,7 +8,6 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
   </head>
-
   <body>
     <header>
       <img src="../../media/poppy.png" alt="Red Poppy">
@@ -28,7 +27,7 @@
   		  		<li><a href="#">1918</a></li>
   	    	</ul>
         </li>
-		   	<li><a href="#">Battles</a></li>
+		   	<li><a href="/wp/a2/pages/battles.html">Battles</a></li>
   		  <li><a href="/wp/a2/pages/places.html">Places</a></li>
         <li><a href="#">Related</a></li>
     	</ul>
