@@ -82,11 +82,11 @@ nav {
 
 /* Flex navigation bar */
 .flexNav {
-    display: flex;  
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 10px;
-    margin-top: 0;
+  display: flex;  
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 0;
   z-index: 100;
   position: relative;
 }
@@ -98,19 +98,19 @@ nav {
 }
   
 .flexNav li a {
-    display: flex;
-    text-decoration: none;
-    color: #b8a04b;
-    padding: 10px;
-    height: 100%;
-    width: 140px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: #b8a04b;
+  padding: 10px;
+  height: 100%;
+  width: 140px;
+  justify-content: center;
+  align-items: center;
 }
   
 .flexNav li a:hover {
-    background: #DDC213;
-    color: black;
+  background: #DDC213;
+  color: black;
 }
 
 /* Navigation dropdown */
@@ -138,7 +138,7 @@ nav {
 
 .main-container h1 {
   font-size: 70px;
-  line-height: 1px
+  line-height: 50px
 }
 
 .main-content h2 {
@@ -155,7 +155,7 @@ nav {
 .battle-letters {
   margin-top: 30px;
   color: black;
-  background: white;
+  background-image: linear-gradient(50deg, #f5f4e1, #f5f5f5);
   padding: 0px 20px 0px 20px;
 }
 
@@ -170,4 +170,77 @@ nav {
   font-family: bad_scriptregular;
   font-weight: normal;
   font-size: 20px;
+}
+
+/* Footer and script design */
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer h3 {
+  font-weight: normal;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin-bottom: 20px;
+}
+
+.links-item {
+  width: 155px;
+    margin: 10px;
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+
+  .flexNav {
+    flex-flow: column wrap;
+  }
+
+  nav {
+    height: 252px;
+    padding-left: 100px;
+  }
+
+  .main-container {
+    flex-flow: column wrap;
+    flex-direction: column;
+  }
+
+  .battle-letters img {
+    width: 100%;
+  }
+
+  .main-container h1 {
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+/* Medium screens */
+@media all and (max-width: 900px) {
+  .flexNav {
+    flex-flow: row wrap;
+  }
+
+  nav {
+    height: 272px;
+  }
+
+  .main-container h1 {
+    line-height: 45px;
+    font-size: 60px;
+    text-align: center;
+  }
 }
