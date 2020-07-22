@@ -200,6 +200,7 @@ nav {
 	margin-right: 20px;
 }
 
+/* parallax for background of main content */
 .parallax {
 	background-image: url("../../media/background.jpg");
 	background-attachment: fixed;
