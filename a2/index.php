@@ -18,13 +18,13 @@
     	<ul class="flexNav">
   		  <li><a href="index.php">Home</a></li>
   		 	<li><a href="#introduction">Introduction</a></li>
-  	   	<li><a href="">Letters</a>
+  	   	<li><a href="#">Letters</a>
   	   		<ul class="subMenu">
-		   			<li><a href="#">1914</a></li>
-  	    		<li><a href="#">1915</a></li>
-  	    		<li><a href="#">1916</a></li>
-  		  		<li><a href="#">1917</a></li>
-  		  		<li><a href="#">1918</a></li>
+		   			<li><a href="/wp/a2/pages/1914.html">1914</a></li>
+  	    		<li><a href="/wp/a2/pages/1915.html">1915</a></li>
+  	    		<li><a href="/wp/a2/pages/1916.html">1916</a></li>
+  		  		<li><a href="/wp/a2/pages/1917.html">1917</a></li>
+  		  		<li><a href="/wp/a2/pages/1918.html">1918</a></li>
   	    	</ul>
         </li>
 		   	<li><a href="/wp/a2/pages/battles.html">Battles</a></li>
@@ -51,7 +51,7 @@
           <img src="../../media/letters-home.jpg" alt="Soldier writing letter in battlefield">
         </div>
       </a>
-      <a href="/wp/a2/pages/letters.html">
+      <a href="/wp/a2/pages/battles.html">
         <div class="image-container">
           <div class="overlay">
             <h2>Life on the Battlefield</h2>
@@ -60,7 +60,7 @@
           <img src="../../media/battles.png" alt="Image of WW2 jet fighters">
         </div>
       </a>
-      <a href="/wp/a2/pages/letters.html">
+      <a href="/wp/a2/pages/places.html">
         <div class="image-container">
           <div class="overlay">
             <h2>Places of Interest</h2>
