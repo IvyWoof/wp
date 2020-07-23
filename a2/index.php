@@ -17,18 +17,18 @@
       <nav>
         <ul class="flexNav">
           <li><a href="../index.php">Home</a></li>
-          <li><a href="/wp/a2/pages/introduction.html">Introduction</a></li>
+          <li><a href="../a2/pages/introduction.html">Introduction</a></li>
           <li><a href="#">Letters</a>
             <ul class="subMenu">
-              <li><a href="/wp/a2/pages/1914.html">1914</a></li>
-              <li><a href="/wp/a2/pages/1915.html">1915</a></li>
-              <li><a href="/wp/a2/pages/1916.html">1916</a></li>
-              <li><a href="/wp/a2/pages/1917.html">1917</a></li>
-              <li><a href="/wp/a2/pages/1918.html">1918</a></li>
+              <li><a href="../a2/pages/1914.html">1914</a></li>
+              <li><a href="../a2/pages/pages/1915.html">1915</a></li>
+              <li><a href="../a2/pages/pages/1916.html">1916</a></li>
+              <li><a href="../a2/pages/pages/1917.html">1917</a></li>
+              <li><a href="../a2/pages/pages/1918.html">1918</a></li>
             </ul>
           </li>
-          <li><a href="/wp/a2/pages/battles.html">Battles</a></li>
-          <li><a href="/wp/a2/pages/places.html">Places</a></li>
+          <li><a href="../a2/pages/battles.html">Battles</a></li>
+          <li><a href="../a2/pages/places.html">Places</a></li>
           <li><a href="#">Related</a>
             <ul class="subMenu">
               <li><a href="https://www.aif.adfa.edu.au/showPerson?pid=11163" target="_blank">Summary of Service</a></li>
@@ -42,7 +42,7 @@
     <!-- 3 Column site content -->
     <main>
       <section class="select-container">
-      <a href="/wp/a2/pages/letters.html">
+      <a href="../a2/pages/letters.html">
         <div class="image-container">
           <div class="overlay">
             <h2>Letters and Postcards</h2>
@@ -51,7 +51,7 @@
           <img src="../../media/letters-home.jpg" alt="Soldier writing letter in battlefield">
         </div>
       </a>
-      <a href="/wp/a2/pages/battles.html">
+      <a href="../a2/pages/battles.html">
         <div class="image-container">
           <div class="overlay">
             <h2>Life on the Battlefield</h2>
@@ -60,7 +60,7 @@
           <img src="../../media/battles.png" alt="Image of WW2 jet fighters">
         </div>
       </a>
-      <a href="/wp/a2/pages/places.html">
+      <a href="../a2/pages/places.html">
         <div class="image-container">
           <div class="overlay">
             <h2>Places of Interest</h2>
@@ -93,7 +93,7 @@
           <h3><a href="sitemap">Sitemap</a></h3>
         </div>
       	<div class="links-item">
-          <h3><a href="/wp/a2/pages/contact.html">Contact us</a></h3>
+          <h3><a href="../a2/pages/contact.html">Contact us</a></h3>
         </div>
         <div class="links-item">
           <h3><a href="https://github.com/s3683007/wp">GitHub</a></h3>

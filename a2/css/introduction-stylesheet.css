@@ -1,8 +1,8 @@
 /* Font for header text */
 @font-face {
     font-family: 'playfair_displayregular';
-    src: url('/wp/a2/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/wp/a2/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    src: url('../../a2/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../../a2/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 /* Font for regular content */
 @font-face {
     font-family: 'open_sansregular';
-    src: url('/wp/a2/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('/wp/a2/fonts/opensans-regular-webfont.woff') format('woff');
+    src: url('../../a2/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../../a2/fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -150,7 +150,7 @@ footer h3 {
 
 /* page background */
 .parallax {
-	background-image: url("/../../../media/introduction-background.jpg");
+	background-image: url("../../../media/introduction-background.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -211,7 +211,6 @@ footer h3 {
 
 /* Small screens */
 @media all and (max-width: 500px) {
-
 	.flexNav {
 		flex-flow: column wrap;
 	}
@@ -221,21 +220,16 @@ footer h3 {
 		padding-left: 100px;
 	}
 
-	#main-container {
-  		flex-direction: column;
-  		flex-flow: wrap;
+	.main-container h1{
+  		font-size: 50px;
  	}
 
- 	iframe {
- 		margin: 20px 0px 0px 0px;
+ 	.main-information {
+ 		flex-direction: column;
  	}
 
- 	.main-info {
- 		margin-top: 140px;
- 	}
-
- 	.main-content {
- 		margin-left: 0px;
+ 	.main-text {
+ 		width: 95%;
  	}
 }
 

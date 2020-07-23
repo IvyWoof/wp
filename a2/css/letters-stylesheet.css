@@ -1,8 +1,8 @@
 /* Font for header text */
 @font-face {
     font-family: 'playfair_displayregular';
-    src: url('/wp/a2/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/wp/a2/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    src: url('../../a2/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../../a2/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 /* Font for regular content */
 @font-face {
     font-family: 'open_sansregular';
-    src: url('/wp/a2/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('/wp/a2/fonts/opensans-regular-webfont.woff') format('woff');
+    src: url('../../a2/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../../a2/fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,8 +19,8 @@
 /*Font for letter content */
 @font-face {
     font-family: 'bad_scriptregular';
-    src: url('/wp/a2/fonts/badscript-regular-webfont.woff2') format('woff2'),
-         url('/wp/a2/fonts/badscript-regular-webfont.woff') format('woff');
+    src: url('../../a2/fonts/badscript-regular-webfont.woff2') format('woff2'),
+         url('../../a2/fonts/badscript-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -46,7 +46,7 @@ main {
 }
 
 .parallax {
-  background-image: url("/../../../media/poppy-background2.jpg");
+  background-image: url("../../../media/poppy-background2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -217,7 +217,7 @@ nav {
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background-image: url("/../../../media/paper-background.jpg");
+  background-image: url("../../../media/paper-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: black;

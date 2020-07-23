@@ -1,8 +1,8 @@
 /* Font for header text */
 @font-face {
     font-family: 'playfair_displayregular';
-    src: url('/wp/a2/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/wp/a2/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    src: url('../a2/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../a2/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 /* Font for regular content */
 @font-face {
     font-family: 'open_sansregular';
-    src: url('/wp/a2/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('/wp/a2/fonts/opensans-regular-webfont.woff') format('woff');
+    src: url('../a2/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../a2/fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -243,6 +243,7 @@ footer h3 {
 
 	.flexNav {
 		flex-flow: column wrap;
+		display:block
 	}
 
 	nav {
@@ -267,12 +268,21 @@ footer h3 {
   		padding-top: 420px;
   	}
 
+  	.main-content {
+  		padding-right: 0px;
+  		padding-left: 0px;
+  	}
+
+  	.main-text img {
+  		margin-left: 70px;
+  	}
 }
 
 /* Medium screens */
 @media all and (max-width: 900px) {
 	.flexNav {
 		flex-flow: row wrap;
+		display:block
 	}
 
 	nav {
