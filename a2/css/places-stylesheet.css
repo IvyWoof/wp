@@ -190,6 +190,7 @@ footer h3 {
 
 	.flexNav {
 		flex-flow: column wrap;
+		display: block;
 	}
 
 	nav {
@@ -219,6 +220,7 @@ footer h3 {
 @media all and (max-width: 900px) {
 	.flexNav {
 		flex-flow: row wrap;
+		display: block;
 	}
 
 	nav {

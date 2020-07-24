@@ -21,10 +21,10 @@
           <li><a href="#">Letters</a>
             <ul class="subMenu">
               <li><a href="../a2/pages/1914.html">1914</a></li>
-              <li><a href="../a2/pages/pages/1915.html">1915</a></li>
-              <li><a href="../a2/pages/pages/1916.html">1916</a></li>
-              <li><a href="../a2/pages/pages/1917.html">1917</a></li>
-              <li><a href="../a2/pages/pages/1918.html">1918</a></li>
+              <li><a href="../a2/pages/1915.html">1915</a></li>
+              <li><a href="../a2/pages/1916.html">1916</a></li>
+              <li><a href="../a2/pages/1917.html">1917</a></li>
+              <li><a href="../a2/pages/1918.html">1918</a></li>
             </ul>
           </li>
           <li><a href="../a2/pages/battles.html">Battles</a></li>
@@ -42,7 +42,7 @@
     <!-- 3 Column site content -->
     <main>
       <section class="select-container">
-      <a href="../a2/pages/letters.html">
+      <a href="../a2/pages/1914.html">
         <div class="image-container">
           <div class="overlay">
             <h2>Letters and Postcards</h2>
