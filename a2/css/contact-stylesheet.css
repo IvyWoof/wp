@@ -155,15 +155,21 @@ input[type=submit] {
 	width: 20%;
 }
 
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+
 .contact-info {
 	order: 1;
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 15%;
-    height: 60%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 15%;
+  height: 60%;
 }
 
 /* Footer and script design */
