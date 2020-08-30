@@ -61,11 +61,11 @@ function topModule() { ?>
 </header>
 <nav>
     <ul class="flexNav">
-        <li><a href="../index.php">Home</a></li>
-        <li><a href="../a2/pages/introduction.html">Introduction</a></li>
-        <li><a href="../a2/pages/letters.php">Letters</a></li>
-        <li><a href="../a2/pages/battles.html">Battles</a></li>
-        <li><a href="../a2/pages/places.html">Places</a></li>
+        <li><a href="../a2/index.php">Home</a></li>
+        <li><a href="../a2/introduction.php">Introduction</a></li>
+        <li><a href="../a2/letters.php">Letters</a></li>
+        <li><a href="../a2/battles.php">Battles</a></li>
+        <li><a href="../a2/places.php">Places</a></li>
         <li><a href="#">Related</a>
             <ul class="subMenu">
                 <li><a href="https://www.aif.adfa.edu.au/showPerson?pid=11163" target="_blank">Summary of Service</a></li>
@@ -85,7 +85,7 @@ function endModule() { ?>
           <h3><a href="sitemap">Sitemap</a></h3>
         </div>
         <div class="links-item">
-          <h3><a href="../a2/pages/contact.html">Contact us</a></h3>
+          <h3><a href="../a2/contact.php">Contact us</a></h3>
         </div>
         <div class="links-item">
           <h3><a href="https://github.com/s3683007/wp">GitHub</a></h3>
