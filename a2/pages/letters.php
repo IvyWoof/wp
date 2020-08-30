@@ -19,24 +19,7 @@
       <div class = postcard-wrapper> <?php letterArray(); ?> </div>
     </main>
     <footer>
-      <div class="links">
-        <div class="links-item">
-          <h3><a href="sitemap">Sitemap</a></h3>
-        </div>
-        <div class="links-item">
-          <h3><a href="../../a2/pages/contact.html">Contact us</a></h3>
-        </div>
-        <div class="links-item">
-          <h3><a href="https://github.com/s3683007/wp">GitHub</a></h3>
-        </div>
-      </div>
-      <div>&copy;<script>
-        document.write(new Date().getFullYear());
-      </script> 
-      <h4>Alanna Hembrow s3683007 Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</h3></div>
-      <div>
-        <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
-      </div>
+      <?php endModule(); ?>
     </footer>
   </body>
 </html>
