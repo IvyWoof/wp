@@ -41,17 +41,9 @@ main {
   border-top: 2px solid grey;
   padding: 30px 20px 0px 20px;
   color: white;
-  background-color: grey;
-  opacity: 0.8;
+  background-color: black;
 }
 
-.parallax {
-  background-image: url("../../../media/poppy-background2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-}
 
 /*Fonts for different header types */
 h1 {
@@ -145,105 +137,74 @@ nav {
   padding: 0;
 }
 
-.main-container h1 {
+/* Main Header */
+main h1 {
   text-align: center;
-  font-size: 70px;
-  color: black;
-  margin-top: 0px;
+  font-size: 60px;
 }
 
-.month-container {
+
+/* Post card */
+.postcard-wrapper {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  padding-bottom: 20px;
-  justify-content: center;
-  text-align: center;
-}
-
-.month-container h2 {
-  order: -1;
-  flex: 1 0 100%;
-  padding-left: 20px;
-  color: black;
-  font-size: 30px;
-
-}
-
-.date-container {
-  width: 400px;
-  border-top: 1px solid black;
-  margin: 20px;
-  text-align: center;
-  color: black;
   padding: 20px;
-  margin-left: 20px;
-  height: 300px;
+  justify-content: space-between;
+}
+
+.postcard {
   font-family: bad_scriptregular;
-  background-color: white;
-  border-radius: 0px 0px 10px 10px;
+  font-size: 20px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  width: 47%;
+  height: 450px;
 }
 
-.date-container h3 {
-  color: #b8a04b;
-}
-
-/* modal styling */
-.modal-open {
-  z-index: 2000;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow-y: initial;
-  background: rgba(0,0,0,0.9);
-  z-index: 99999;
-  opacity:0;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
-}
-
-.modal-open:target {
-  opacity:1;
-  pointer-events: auto;
-}
-
-.modal-open > div {
-  width: 80%;
-  height: 60%;
-  overflow-y: auto;
+.postcard-inner {
   position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  background-image: url("../../../media/paper-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: black;
-  font-family: bad_scriptregular;
-  font-size: 24px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
 }
 
-/* close modal */
-.close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
+.postcard:hover .postcard-inner {
+  transform: rotateX(180deg);
+}
+
+.postcard-front, .postcard-back {
   position: absolute;
-  right: 0px;
-  text-align: center;
-  top: 0px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 12px;
-  box-shadow: 1px 1px 3px #000;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
-.close:hover { 
-  background: #ebd8a2; 
+.postcard-front {
+  background-image: url("../../../media/postcard_front.png");
+  color: black;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
 }
+
+.postcard-back {
+  background-image: url("../../../media/postcard_back.png");
+  color: black;
+  overflow: scroll;
+  transform: rotateX(180deg);
+} 
+
+.postcard-back p {
+  padding: 20px;
+}
+
+.postcard-date {
+  margin-left: 5%;
+  font-size: 30px;
+}
+
 
 /* Footer and script design */
 footer {
