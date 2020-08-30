@@ -13,28 +13,7 @@
     <?php require '../../a3/tools.php';?>
   </head>
   <body>
-    <header>
-      <img src="../../../media/poppy.png" alt="Red Poppy">
-      <h1><a href="../index.php">Life as an ANZAC</a></h1>
-    </header>
-      <nav>
-    		<ul class="flexNav">
-  		    <li><a href="../index.php">Home</a></li>
-  		   	<li><a href="../../a2/pages/introduction.html">Introduction</a></li>
-  		   	<li><a href="#">Letters</a>
-          </li>
-  		   	<li><a href="../../a2/pages/battles.html">Battles</a></li>
-  		   	<li><a href="../../a2/pages/places.html">Places</a></li>
-          <li><a href="#">Related</a>
-            <ul class="subMenu">
-              <li><a href="https://www.aif.adfa.edu.au/showPerson?pid=11163" target="_blank">Summary of Service</a></li>
-              <li><a href="https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/ViewImage.aspx?B=3009496&S=1" target="_blank">Service Record</a></li>
-              <li><a href="https://www.google.com.au/search?hl=en&site=imghp&tbm=isch&source=hp&biw=1920&bih=982&q=Omrah&oq=Omrah&gs_l=img.12...5422.5422.0.6592.1.1.0.0.0.0.212.212.2-1.1.0.msedr...0...1ac.1.62.img..1.0.0.xuc9Jh0uuzM" target="_blank">9th Battalion Brisbane</a></li>
-              <li><a href="https://www.awm.gov.au/sites/default/files/images/collection/items/ACCNUM_LARGE/RCDIG1067548/RCDIG1067548--337-.JPG" target="_blank">Embarkation Roll</a></li>
-            </ul>
-          </li>
-    		</ul>
-    	</nav>
+    <?php topModule(); ?>
     <main>
       <h1>Letters Home</h1>
       <div class = postcard-wrapper> <?php letterArray(); ?> </div>
