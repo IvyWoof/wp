@@ -7,15 +7,14 @@
     
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='stylecss' type="text/css" rel="stylesheet" href="../a2/css/contact-stylesheet.css">
-    <script src="../a3/tools.js"></script>
+    <script src="../a3/tools.js" defer></script>
     <?php require '../a3/tools.php';?>
   </head>
-
-  <body>
+  <body onload="loadPageListener()">
     <?php topModule(); ?>
-    <main class="parallax">
+    <main id="form" class="parallax">
       <section class="contact-form">
-        <form name ="contactForm" action="check.php" method="POST" id="contactForm">
+        <form name ="contactForm" method="POST" id="contactForm">
             <label for="contactName" class="name">Name</label>
             <input id="contactName" type="text" value ="<?php echo $_SESSION['badName']; ?>" name="contactName" placeholder="Your name.." required>
             <label for="email">Email</label>
@@ -30,7 +29,7 @@
             <label for="rememberMe">Remember me</label>
             <input type="checkbox" value="rememberMe" id="rememberMeBox">
             </div>
-            <button id="submit" type="submit" name="submit">Submit</button>
+            <button id="submit-form" type="submit" name="submit">Submit</button>
         </form>
       </section>
       <section class ="contact-info">

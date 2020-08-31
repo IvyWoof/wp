@@ -6,7 +6,7 @@
  <script src="tools.js" defer></script> 
  <?php require 'check.php'; ?>
 </head>
-<body>
+<body onload="loadPageListener()">
 
 <h3>Contact Form</h3>
 
@@ -31,5 +31,13 @@
             <button id="submit" type="submit" name="submit">Submit</button>
         </form>
 
+
+
+
+
+
+
+
+      <div class = postcard-wrapper><?php letterArray(); ?></div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* Contact form submit button event listeners */
-var submitListener = document.getElementById("submit-form");
+var submitListener = document.getElementById("submit");
 submitListener.addEventListener("click", validateMobile);
 submitListener.addEventListener("click", validateName);
 
@@ -44,7 +44,7 @@ function validateName() {
 
 /* Remembering users in localStorage*/
 /* Checkbox listener for remember me */
-var rememberMeListener = document.getElementById("submit-form");
+var rememberMeListener = document.getElementById("submit");
 rememberMeListener.addEventListener("click", storage);
 
 /* Function to store input data in localstorage */
@@ -74,9 +74,6 @@ function storage() {
 }
 
 /* restore data on page load */
-var onLoadListener = document.getElementById("form");
-onLoadListener.addEventListener("load", loadPageListener);
-
 function loadPageListener() {
     var checked = localStorage.getItem('rememberMeBox');
 
