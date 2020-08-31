@@ -12,6 +12,7 @@ if ($values = fgetcsv($file, 0, "\t")) {
 while ($values = fgetcsv($file, 0, "\t")) {
 
     if (count($headings) == count($values)) {
+
         $correspondence[] = array_combine($headings, $values);
     }
 
@@ -102,3 +103,100 @@ function endModule() { ?>
 }
 ?>
 
+<?php
+function validateForm() {
+
+$email = "";
+$contactName = "";
+$mobile = "";
+$subject = "";
+$message = "";
+$emailError = '';
+$errorsFound = false;
+$namePattern = '';
+$mobilePattern = '';
+$resultMsg = "";
+
+
+ if (!empty($_POST)) {
+
+    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+        $emailError = '<span class="errorMsg" style="color:red">Must be numeric</span>';
+        $errorsFound = true;
+
+    }
+
+    else {
+
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+
+    } 
+
+
+    if (!preg_match('/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/i', $_POST['contactName'])) {
+    
+        $contactName = $_POST['contactName'];
+        $nameError = 'span class="errorMsg" style="color:red">Must be numeric</span>';
+        $errorsFound = true;
+    
+    }
+
+    else {
+
+        $contactName = $_POST['contactName'];
+
+    }
+
+    if (!preg_match('/^04(\s?[0-9]{2}\s?)([0-9]{3}\s?[0-9]{3}|[0-9]{2}\s?[0-9]{2}\s?[0-9]{2})$/i', $_POST['mobile'])) {
+        
+        $mobile = $_POST['mobile'];
+        $mobileError = '<span class="errorMsg" style="color:red">Must be numeric</span>';
+        $errorsFound = true;
+
+    }
+
+    else {
+
+      $mobile = $_POST['mobile'];
+
+    }
+
+
+    if (!$errorsFound) {
+    
+      $resultMsg = '<span class="form-result" style = "color: green">Form successfully sent! Thanks for contributing.</span>';
+
+    } 
+
+    else {
+        
+        $resultMsg = '<span class="form-result" style = "color: red">Form failed to send!</span>';
+      
+    }
+      
+}
+
+?>
+        <form name ="contactForm" method="POST" id="contactForm">
+            <?= $resultMsg ?>
+            <label for="contactName" class="name">Name</label>
+            <input id="contactName" type="text" value ="<?= $contactName ?>" name="contactName" placeholder="Your name.." required><?php echo $nameError ?>
+            <label for="email">Email</label>
+            <input id="email" type="text" value ="<?= $email ?>" name="email" placeholder="Your email.." required><?php echo $emailError ?>
+            <label for="mobile" class="mobile">Mobile</label>
+            <input id="mobile" type="tel" value ="<?= $mobile ?>" name="mobile" placeholder="Your mobile number.." ><?php echo $mobileError ?>
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" name="subject" placeholder="Message subject.." required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message here.." required></textarea>
+            <div class="rememberMe">
+            <label for="rememberMe">Remember me</label>
+            <input type="checkbox" value="rememberMe" id="rememberMeBox">
+            </div>
+            <button id="submit-form" type="submit" name="submit">Submit</button>
+        </form>
+<?php
+}
+?>

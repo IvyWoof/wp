@@ -29,6 +29,7 @@ body {
 main {
 	display: flex;
 	justify-content: space-between;
+  flex-wrap: nowrap
 	color: white;
 	border-top: 2px solid grey;
 	padding: 30px 20px 0px 20px;
@@ -86,11 +87,11 @@ nav {
 
 /* Flex navigation bar */
 .flexNav {
-  	display: flex;  
-  	flex-direction: row;
-  	justify-content: flex-end;
-  	margin-right: 10px;
-  	margin-top: 0;
+  display: flex;  
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 0;
 	z-index: 100;
 	position: relative;
 }
@@ -135,23 +136,21 @@ nav {
 
 /* form styling */
 .contact-form {
-	padding-left: 50px;
-  order: 2;
-	width: 40%;
+  width: 500px;
 	margin-right: 40px;
 }
 
 form {
   display: grid;
   padding: 10px;
+  width: 100%;
   margin: 5px auto 0 auto;
-  max-width: 100%;
   grid-gap: 16px;
 }
 
 form input {
-  width: 100%;
   padding: 5px;
+  width: 400px;
   margin: 4px 0 10px 0;
 }
 
@@ -182,6 +181,7 @@ form button:hover {
 }
 
 form label {
+  width: 100px;
   text-align: right;
   grid-column: 1 / 2;
 }
@@ -198,9 +198,23 @@ input[type="checkbox"] {
   width: 100%;
 }
 
+.form-result {
+  position:relative;
+  top: 0px;
+  text-align: right;
+  width: 400px;
+  grid-column: 2/2;
+}
+
+.errorMsg {  
+  text-align: center;
+  grid-column: 3/3;
+  width: 100px;
+  font-size: 12px;
+}
 
 .contact-info {
-	order: 1;
+	order: 3;
   background-color: white;
   color: black;
   text-align: center;

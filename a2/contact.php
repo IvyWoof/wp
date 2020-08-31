@@ -13,23 +13,7 @@
     <?php topModule(); ?>
     <main id="form" class="parallax">
       <section class="contact-form">
-        <form name ="contactForm" method="POST" id="contactForm">
-            <label for="contactName" class="name">Name</label>
-            <input id="contactName" type="text" value ="<?php echo $_SESSION['badName']; ?>" name="contactName" placeholder="Your name.." required>
-            <label for="email">Email</label>
-            <input id="email" type="text" value="<?php echo $_SESSION['cleanEmail']; ?>" name="email" placeholder="Your email.." required>
-            <label for="mobile" class="mobile">Mobile</label>
-            <input id="mobile" type="tel" name="mobile" placeholder="Your mobile number.." >
-            <label for="subject">Subject</label>
-            <input id="subject" type="text" name="subject" placeholder="Message subject.." required>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message here.." required></textarea>
-            <div class="rememberMe">
-            <label for="rememberMe">Remember me</label>
-            <input type="checkbox" value="rememberMe" id="rememberMeBox">
-            </div>
-            <button id="submit-form" type="submit" name="submit">Submit</button>
-        </form>
+        <?php validateForm(); ?>
       </section>
       <section class ="contact-info">
         <h1>Contact Us</h1>

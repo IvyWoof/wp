@@ -25,7 +25,7 @@ function validateMobile() {
 
 /* Validation of names with use of limited punctuation */
 function validateName() {
-	var acceptedABC = /^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/;
+	var acceptedABC = /^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/;
 
 	if (contactName.value.match(acceptedABC)) {
 		return true;
