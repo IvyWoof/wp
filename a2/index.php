@@ -16,7 +16,7 @@
    <?php topModule(); ?>
     <main>
       <section class="select-container">
-      <a href="../a2/pages/1914.html">
+      <a href="../a2/letters.php">
         <div class="image-container">
           <div class="overlay">
             <h2>Letters and Postcards</h2>
@@ -25,7 +25,7 @@
           <img src="../../media/letters-home.jpg" alt="Soldier writing letter in battlefield">
         </div>
       </a>
-      <a href="../a2/pages/battles.html">
+      <a href="../a2/battles.php">
         <div class="image-container">
           <div class="overlay">
             <h2>Life on the Battlefield</h2>
@@ -34,7 +34,7 @@
           <img src="../../media/battles.png" alt="Image of WW2 jet fighters">
         </div>
       </a>
-      <a href="../a2/pages/places.html">
+      <a href="../a2/places.php">
         <div class="image-container">
           <div class="overlay">
             <h2>Places of Interest</h2>

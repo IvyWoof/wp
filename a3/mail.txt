@@ -1,34 +1,7 @@
-Alanna alanna.hembrow@gmail.com 0418650643 fdasfds dasfasff
-Name Email Mobile Subject Message
-Alanna alanna.hembrow@gmail.com 0418650643 fdasfds dasfasff
-Name Email Mobile Subject Message
-Alanna alanna.hembrow@gmail.com 0418650643 fdasfds dasfasff
-Name Email Mobile Subject Message
-Alanna alanna.hembrow@gmail.com 0418650643 fdasfds dasfasff
-Name Email Mobile Subject Message
-Alanna alanna.hembrow@gmail.com 0418650643 fdasfds dasfasff
-Name Email Mobile Subject Message
-Alanna alanna.hembrow@gmail.com 0418650643 fdasfds "My name is &Oslash;yvind &Aring;sane. I&amp;#39;m Norwegian."
-Name Email Mobile Subject Message
-Alanna alanna.hembrow@gmail.com 0418650643 fdasfds "My name is Øyvind Åsane. I'm Norwegian."
-Name Email Mobile Subject Message
-Alanna alanna.hembrow@gmail.com 0418650643 fdasfds "My name is Øyvind Åsane. I'm Norwegian."
-Name Email Mobile Subject Message
-Alanna john.doe@example.com 0418650643 https://www.w3schoolsÅÅ.com https://www.w3schoolsÅÅ.com
-Name Email Mobile Subject Message
-Alanna john.doe@example.com 0418650643 https://www.w3schoolsÅÅ.com https://www.w3schoolsÅÅ.com
-Name Email Mobile Subject Message
-Alanna john.doe@example.com 0418650643 f Test
-Alanna john.doe@example.com  f Test
-Alanna john.doe@example.com  f Test
- john.doe@example.com  f Test
- john.doe@example.com  f Test
- john.doe@example.com  f Test
- john.doe@example.com  s &amp;#39;#k,p#&amp;#39;;#
- john.doe@example.com  dafasfas fasafa
- john.doe@example.com  dagdasgas gfdsgdsgs
- john.doe@example.com  dagdasgas gfdsgdsgs
-Alanna john.doe@example.com 0418650643 dasdasd dasda
-Alanna john.doe@example.com 0418650643 f dasda
-Alanna john.doe@example.com 0418650643 f dasda
-Alanna john.doe@example.com 0418650643 s sdadasda
+Alanna john.doe@example.com 0418650643 f klmklm
+Alanna john.doe@example.com 0418650643 gfdsg dfgdfs
+Alanna|john.doe@example.com|0418650643|fdsfdsf|fdsfdssdf
+Alanna|john.doe@example.com|0418650643|adsdadasdsadsadas|dasdsaddasdadasdasd
+Alanna|john.doe@example.com|0418650643|adsdadasdsadsadas|dasdsaddasdadasdasd
+Alanna|john.doe@example.com|0418650643|"My name is Øyvind Åsane. I&amp;#39;m Norwegian."|dasdas
+Alanna|john.doe@example.com|0418650643|"My name is Øyvind Åsane. I&amp;#39;m Norwegian."|fdsfdsfsfdsffds

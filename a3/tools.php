@@ -57,7 +57,7 @@ fclose($file);
 function topModule() { ?>
 
 <header>
-    <img src="/media/poppy.png" alt="Red Poppy">
+    <img src="../../media/poppy.png" alt="Red Poppy">
     <h1><a href="index.php">Life as an ANZAC</a></h1>
 </header>
 <nav>
@@ -117,24 +117,28 @@ $errorsFound = false;
 $namePattern = '/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/i';
 $mobilePattern = '/^04(\s?[0-9]{2}\s?)([0-9]{3}\s?[0-9]{3}|[0-9]{2}\s?[0-9]{2}\s?[0-9]{2})$/i';
 $resultMsg = "";
+$nameError = "";
+$emailError = "";
+$mobileError = "";
 
 
 
  if (!empty($_POST)) {
 
-    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-
+    if (isset($_POST["email"])){
+        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
         $emailError = '<span class="errorMsg" style="color:red">Invalid email</span>';
-        $errorsFound = true;
+        $errorsFound = true; 
 
+        }
+        
+        else {
+
+            $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+
+        } 
     }
-
-    else {
-
-        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-
-    } 
 
 
     if (!preg_match($namePattern, $_POST['contactName'])) {
@@ -175,12 +179,12 @@ $resultMsg = "";
         $records = array (
             array("$contactName", "$email", "$mobile", "$subject", "$message" ));
             
-        $file = fopen("C:\MAMP\htdocs\wp\a3\mail.txt","a");
+        $file = fopen("../a3/mail.txt","a");
         flock($file, LOCK_EX);
         foreach ($records as $record) {
-        fputcsv($file, $record," \t ");
+        fputcsv($file, $record, "|");
         flock($file, LOCK_UN);
-        fclose($fp);
+        fclose($file);
         }
 
         $resultMsg = '<span class="form-result" style = "color: green">Form successfully sent! Thanks for contributing.</span>';
@@ -188,12 +192,13 @@ $resultMsg = "";
         $contactName = "";
         $email = "";
         $mobile = "";
-        $_POST['subject'] = "";
-        $_POST['message'] = "";
+        $subject = "";
+        $message = "";
     } 
 
     else {
         $subject = $_POST['subject'];
+        $message = $_POST['message'];
         $resultMsg = '<span class="form-result" style = "color: red">Form failed to send!</span>';
       
     }
@@ -210,9 +215,9 @@ $resultMsg = "";
             <label for="mobile" class="mobile">Mobile</label>
             <input id="mobile" type="tel" value ="<?= $mobile ?>" name="mobile" placeholder="Your mobile number.." ><?php echo $mobileError ?>
             <label for="subject">Subject</label>
-            <input id="subject" type="text" value ="<?= $_POST['subject'] ?>" name="subject" placeholder="Message subject.." required>
+            <input id="subject" type="text" value ="<?= $subject ?>" name="subject" placeholder="Message subject.." required>
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message here.." required><?= $_POST['message'] ?></textarea>
+            <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message here.." required><?= $message ?></textarea>
             <div class="rememberMe">
             <label for="rememberMe">Remember me</label>
             <input type="checkbox" value="rememberMe" id="rememberMeBox">
