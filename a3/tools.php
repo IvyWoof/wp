@@ -114,7 +114,7 @@ $filtersubject = "";
 $message = "";
 $filtermessage = "";
 $errorsFound = false;
-$namePattern = '/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/i';
+$namePattern = '/^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/i';
 $mobilePattern = '/^04(\s?[0-9]{2}\s?)([0-9]{3}\s?[0-9]{3}|[0-9]{2}\s?[0-9]{2}\s?[0-9]{2})$/i';
 $resultMsg = "";
 $nameError = "";
@@ -144,7 +144,7 @@ $mobileError = "";
     if (!preg_match($namePattern, $_POST['contactName'])) {
     
         $contactName = $_POST['contactName'];
-        $nameError = 'span class="errorMsg" style="color:red">Unrecognised characters</span>';
+        $nameError = '<span class="errorMsg" style="color:red">Unrecognised characters</span>';
         $errorsFound = true;
     
     }
