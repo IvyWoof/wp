@@ -110,12 +110,14 @@ $email = "";
 $contactName = "";
 $mobile = "";
 $subject = "";
+$filtersubject = "";
 $message = "";
-$emailError = '';
+$filtermessage = "";
 $errorsFound = false;
-$namePattern = '';
-$mobilePattern = '';
+$namePattern = '/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/i';
+$mobilePattern = '/^04(\s?[0-9]{2}\s?)([0-9]{3}\s?[0-9]{3}|[0-9]{2}\s?[0-9]{2}\s?[0-9]{2})$/i';
 $resultMsg = "";
+
 
 
  if (!empty($_POST)) {
@@ -123,7 +125,7 @@ $resultMsg = "";
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 
         $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-        $emailError = '<span class="errorMsg" style="color:red">Must be numeric</span>';
+        $emailError = '<span class="errorMsg" style="color:red">Invalid email</span>';
         $errorsFound = true;
 
     }
@@ -135,10 +137,10 @@ $resultMsg = "";
     } 
 
 
-    if (!preg_match('/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/i', $_POST['contactName'])) {
+    if (!preg_match($namePattern, $_POST['contactName'])) {
     
         $contactName = $_POST['contactName'];
-        $nameError = 'span class="errorMsg" style="color:red">Must be numeric</span>';
+        $nameError = 'span class="errorMsg" style="color:red">Unrecognised characters</span>';
         $errorsFound = true;
     
     }
@@ -149,10 +151,10 @@ $resultMsg = "";
 
     }
 
-    if (!preg_match('/^04(\s?[0-9]{2}\s?)([0-9]{3}\s?[0-9]{3}|[0-9]{2}\s?[0-9]{2}\s?[0-9]{2})$/i', $_POST['mobile'])) {
+    if (!preg_match($mobilePattern, $_POST['mobile'])) {
         
         $mobile = $_POST['mobile'];
-        $mobileError = '<span class="errorMsg" style="color:red">Must be numeric</span>';
+        $mobileError = '<span class="errorMsg" style="color:red">Incorrect number</span>';
         $errorsFound = true;
 
     }
@@ -165,13 +167,33 @@ $resultMsg = "";
 
 
     if (!$errorsFound) {
-    
-      $resultMsg = '<span class="form-result" style = "color: green">Form successfully sent! Thanks for contributing.</span>';
+        $filtersubject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+        $filtermessage = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+        $message = htmlspecialchars($filtermessage, ENT_QUOTES, "UTF-8");
+        $subject = htmlspecialchars($filtersubject, ENT_QUOTES, "UTF-8");
 
+        $records = array (
+            array("$contactName", "$email", "$mobile", "$subject", "$message" ));
+            
+        $file = fopen("C:\MAMP\htdocs\wp\a3\mail.txt","a");
+        flock($file, LOCK_EX);
+        foreach ($records as $record) {
+        fputcsv($file, $record," \t ");
+        flock($file, LOCK_UN);
+        fclose($fp);
+        }
+
+        $resultMsg = '<span class="form-result" style = "color: green">Form successfully sent! Thanks for contributing.</span>';
+   
+        $contactName = "";
+        $email = "";
+        $mobile = "";
+        $_POST['subject'] = "";
+        $_POST['message'] = "";
     } 
 
     else {
-        
+        $subject = $_POST['subject'];
         $resultMsg = '<span class="form-result" style = "color: red">Form failed to send!</span>';
       
     }
@@ -188,9 +210,9 @@ $resultMsg = "";
             <label for="mobile" class="mobile">Mobile</label>
             <input id="mobile" type="tel" value ="<?= $mobile ?>" name="mobile" placeholder="Your mobile number.." ><?php echo $mobileError ?>
             <label for="subject">Subject</label>
-            <input id="subject" type="text" name="subject" placeholder="Message subject.." required>
+            <input id="subject" type="text" value ="<?= $_POST['subject'] ?>" name="subject" placeholder="Message subject.." required>
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message here.." required></textarea>
+            <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter your message here.." required><?= $_POST['message'] ?></textarea>
             <div class="rememberMe">
             <label for="rememberMe">Remember me</label>
             <input type="checkbox" value="rememberMe" id="rememberMeBox">

@@ -35,6 +35,7 @@ function validateName() {
 	else
 
 	{
+		mobile.style.border = "2px solid red";
 		alert("Please enter a name containing letters from the English alphabet!");
 		event.preventDefault()
 		return false;
