@@ -74,10 +74,7 @@ function storage() {
 }
 
 /* restore data on page load */
-var onLoadListener = document.getElementById("form");
-onLoadListener.addEventListener("load", loadPageListener);
-
-function loadPageListener() {
+document.addEventListener("DOMContentLoaded", function loadPageListener() {
     var checked = localStorage.getItem('rememberMeBox');
 
     if (checked == "true") 
@@ -99,4 +96,4 @@ function loadPageListener() {
 		return false;
 
 	}
-}
+})

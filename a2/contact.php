@@ -10,7 +10,6 @@
     <script src="../a3/tools.js" defer></script>
     <?php require '../a3/tools.php';?>
   </head>
-  <body onload="loadPageListener()">
     <?php topModule(); ?>
     <main id="form" class="parallax">
       <section class="contact-form">
