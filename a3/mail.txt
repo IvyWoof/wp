@@ -4,3 +4,7 @@ Alanna|john.doe@example.com|0418650643|f|sffsdfs
 aalmnnaa2|john.doe@example.com|0418650643|dsadas|adsadas
 Alanna232|john.doe@example.com|0418650643|f|dsa
 Alanna|john.doe@example.com|0418650643|d|dascscac
+Alanna|john.doe@example.com|0418650643|d|dascscac
+Alanna'dam|john.doe@example.com|0418650643|asdadsad|dasdaddasdas
+Alanna'dam|john.doe@example.com|0418650643|hj,jhf|,jhf,j,jh,hfj
+asdasds|tozerba@hotmail.com|0432522120|test|"sadas a"

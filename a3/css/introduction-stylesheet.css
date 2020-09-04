@@ -1,0 +1,260 @@
+/* Font for header text */
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('../../a3/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../../a3/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Font for regular content */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../../a3/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../../a3/fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	font-family: open_sansregular;
+	color: white;
+}
+
+body {
+	margin: 0;
+	background-color: black;
+}
+
+main {
+	color: white;
+	border-top: 2px solid grey;
+	padding: 30px 20px 0px 20px;
+}
+
+/*Fonts for different header types */
+h1 {
+	font-family: playfair_displayregular;
+}
+
+h2 {
+	font-family: playfair_displayregular;
+}
+
+/*  of header */
+header {
+	display: flex;
+	height: 100%;
+	margin: 0px 16px 0px 16px;
+	line-height: 0px;
+	align-items: center;
+	justify-content: flex-start;
+}	
+
+header h1 {
+	text-transform: uppercase;
+	margin-left: 10px;
+	font-weight: normal;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Fixed nav so it stays on page */
+nav {
+	position:sticky;
+	top: 0px;
+	z-index: 20;
+	background: black;
+	height: 62px;
+}
+
+/* Flex navigation bar */
+.flexNav {
+  	display: flex;  
+  	flex-direction: row;
+  	justify-content: flex-end;
+  	margin-right: 10px;
+  	margin-top: 0;
+	z-index: 100;
+	position: relative;
+}
+  
+.flexNav li {
+    list-style-type: none;
+    text-transform: uppercase;
+  	display: block;
+}
+  
+.flexNav li a {
+    display: flex;
+    text-decoration: none;
+    color: #b8a04b;
+    padding: 10px;
+ 	height: 100%;
+ 	width: 140px;
+ 	justify-content: center;
+ 	align-items: center;
+}
+  
+.flexNav li a:hover {
+    background: #DDC213;
+    color: black;
+}
+
+/* Navigation dropdown */
+.subMenu {
+	display: none;
+	position: absolute;
+	text-align: center;
+	background-color: white;
+ 	width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.flexNav li:hover .subMenu {
+	display: block;
+	padding: 0;
+}
+
+/* Footer and script design */
+footer {
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+footer h3 {
+	font-weight: normal;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	margin-bottom: 20px;
+}
+
+.links-item {
+	width: 155px;
+    margin: 10px;
+}
+
+/* page background */
+.parallax {
+	background-image: url("../../../media/introduction-background.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.main-container {
+	display: flex;
+	flex-flow: row wrap;
+	height: 100%;
+}
+
+.main-container h1{
+	color: black;
+	font-size: 80px;
+	line-height: 1px;
+}
+
+.main-information {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-text {
+	margin: 0px 30px 20px 0px;
+	background-color: #d9d9d9;
+	color: black;
+	width: 50%;
+	height: 95%;
+	text-align: center;
+	padding: 10px;
+	opacity: 80%;
+}
+
+.main-abbreviations {
+	background-color: white;
+	color: black;
+	padding: 0px 10px 10px 10px;
+	margin-bottom: 170px;
+	border-radius: 10px;
+}
+
+/* table styling */
+.main-abbreviations table, td, th {
+	text-align: left;
+	border: 1px solid black;
+}
+
+.main-abbreviations table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.main-abbreviations h2 {
+	text-align: center;
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+	.flexNav {
+		flex-flow: column wrap;
+		display:block
+	}
+
+	nav {
+		height: 252px;
+		padding-left: 100px;
+	}
+
+	.main-container h1{
+  		font-size: 50px;
+ 	}
+
+ 	.main-information {
+ 		flex-direction: column;
+ 	}
+
+ 	.main-text {
+ 		width: 95%;
+ 	}
+}
+
+/* Medium screens */
+@media all and (max-width: 900px) {
+	.flexNav {
+		flex-flow: row wrap;
+		display: block;
+	}
+
+	nav {
+		height: 272px;
+	}
+
+	#main-container {
+  		flex-direction: column;
+  		flex-flow: wrap;
+ 	}
+
+ 	.main-content {
+ 		margin-left: 0px;
+ 	}
+
+ 	iframe {
+ 		margin: 20px 0px 0px 0px;
+ 	}
+}

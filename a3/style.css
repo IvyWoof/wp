@@ -1,0 +1,308 @@
+/* Font for header text */
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('../a2/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../a2/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Font for regular content */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../a2/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../a2/fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	font-family: open_sansregular;
+	color: white;
+}
+
+body {
+	margin: 0;
+	background-color: black;
+}
+
+main {
+	color: white;
+	border-top: 2px solid grey;
+	padding: 30px 20px 0px 20px;
+}
+
+/*Fonts for different header types */
+h1 {
+	font-family: playfair_displayregular;
+}
+
+h2 {
+	font-family: playfair_displayregular;
+}
+
+/*  of header */
+header {
+	display: flex;
+	height: 100%;
+	margin: 0px 16px 0px 16px;
+	line-height: 0px;
+	align-items: center;
+	justify-content: flex-start;
+}	
+
+header h1 {
+	text-transform: uppercase;
+	margin-left: 10px;
+	font-weight: normal;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Fixed nav so it stays on page */
+nav {
+	position:sticky;
+	top: 0px;
+	z-index: 20;
+	background: black;
+	height: 62px;
+}
+
+/* Flex navigation bar */
+.flexNav {
+  	display: flex;  
+  	flex-direction: row;
+  	justify-content: flex-end;
+  	margin-right: 10px;
+  	margin-top: 0;
+	z-index: 100;
+	position: relative;
+}
+  
+.flexNav li {
+    list-style-type: none;
+    text-transform: uppercase;
+  	display: block;
+}
+  
+.flexNav li a {
+    display: flex;
+    text-decoration: none;
+    color: #b8a04b;
+    padding: 10px;
+ 	height: 100%;
+ 	width: 140px;
+ 	justify-content: center;
+ 	align-items: center;
+}
+  
+.flexNav li a:hover {
+    background: #DDC213;
+    color: black;
+}
+
+/* Navigation dropdown */
+.subMenu {
+	display: none;
+	position: absolute;
+	background-color: white;
+	text-align: center;
+ 	width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.flexNav li:hover .subMenu {
+	display: block;
+	padding: 0;
+}
+
+/* 3 column container with images */
+.select-container {
+	display: flex;
+	width: 100%;
+}
+
+.image-container img{
+    width: 622px;
+    height: 800px;
+}
+
+.image-container {
+	flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    transition: all .4s;
+}
+
+/* 3 column image overlay and transition */
+.overlay {
+  	position: absolute;
+  	opacity: 0;
+  	transition: all .4s;
+  	color: #fff;
+  	z-index: 1;
+  	background-color: black;
+	width: 100%;
+	height: 100%;
+	display: none;
+	text-align: center;
+	padding: 50% 0;
+}
+
+.overlay p {
+	padding: 20px;
+}
+    
+.image-container:hover .overlay {
+    opacity: 70%;
+    display: inline-block;
+}
+    
+.image-container:hover img {
+    transform: scale(1.3);
+}
+
+/*Main content of website */
+.main-container {
+	display: flex;
+	margin-top: 40px;
+}
+
+.main-content {
+	background-color: #808080;
+	margin: 100px 0 100px 0;
+	padding: 0px 100px 20px 60px;
+	opacity: 90%
+}
+
+.main-content h2 {
+	font-size: 55px;
+	line-height: 1px;
+    color: #b8a04b;
+}
+
+.main-text {
+	text-align: center;
+}
+
+.main-content img{
+	float: left;
+	width: 260px;
+	height: 380px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	margin-right: 20px;
+}
+
+/* parallax for background of main content */
+.parallax {
+	background-image: url("../../media/background.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+/* Footer and script design */
+footer {
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+footer h3 {
+	font-weight: normal;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	margin-bottom: 20px;
+}
+
+.links-item {
+	width: 155px;
+    margin: 10px;
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+
+	.flexNav {
+		flex-flow: column wrap;
+		display: block;
+	}
+
+	nav {
+		height: 252px;
+		padding-left: 100px;
+	}
+
+	.select-container {
+	  	flex-direction: column;
+	  	width: 100%;
+	}
+
+	.overlay {
+		width: 100%;
+	}
+
+	main {
+  		flex-direction: column;
+ 	}
+
+  	.main-text h2 {
+  		padding-top: 420px;
+  	}
+
+  	.main-content {
+  		padding-right: 0px;
+  		padding-left: 0px;
+  	}
+
+  	.main-text img {
+  		margin-left: 70px;
+  	}
+}
+
+/* Medium screens */
+@media all and (max-width: 900px) {
+	.flexNav {
+		flex-flow: row wrap;
+		display: block;
+	}
+
+	nav {
+		height: 272px;
+	}
+
+	.select-container {
+	  	flex-direction: column;
+	  	width: 100%;
+	}
+
+	.image-container img {
+	  	width: 100%;
+	}
+
+	main {
+  		flex-direction: column;
+ 	}
+
+  	.main-text h2 {
+  		padding-top: 420px;
+  	}
+}
